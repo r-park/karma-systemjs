@@ -1,7 +1,7 @@
-# KarmaJS + SystemJS Example
+# Karma + SystemJS Example
 
-- [Babel](https://github.com/babel/babel)
-- [Gulp 4](https://github.com/gulpjs/gulp)
-- [KarmaJS](https://github.com/karma-runner/karma)
-- [SystemJS](https://github.com/systemjs/systemjs)
-- [ES6 Module Loader](https://github.com/ModuleLoader/es6-module-loader)
+- <a href="https://github.com/babel/babel" target="_blank">Babel</a>
+- <a href="https://github.com/gulpjs/gulp" target="_blank">Gulp 4</a>
+- <a href="https://github.com/karma-runner/karma" target="_blank">KarmaJS</a>
+- <a href="https://github.com/systemjs/systemjs" target="_blank">SystemJS</a>
+- <a href="https://github.com/ModuleLoader/es6-module-loader" target="_blank">ES6 Module Loader</a>
