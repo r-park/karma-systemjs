@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/r-park/karma-systemjs.svg?branch=master)](https://travis-ci.org/r-park/karma-systemjs)
+
 # Karma + SystemJS Example
 
 - <a href="https://github.com/babel/babel" target="_blank">Babel</a>
