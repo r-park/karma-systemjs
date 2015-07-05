@@ -1,1 +1,6 @@
-# karma-systemjs
+# KarmaJS + SystemJS Example
+
+- Babel
+- Gulp
+- KarmaJS
+- SystemJS
