@@ -5,7 +5,8 @@ __karma__.loaded = function(){};
 
 // SystemJS configuration.
 System.config({
-  baseURL: '/base/'
+  baseURL: '/base/',
+  defaultJSExtensions: true
 });
 
 
@@ -13,22 +14,31 @@ System.config({
 Promise
   .all(loadTestFiles())
   .then(
-    function(){
-      __karma__.start();
-    },
-    function(error){
-      console.error(error.stack || error);
-      __karma__.start();
-    }
-  );
+  function(){
+    __karma__.start();
+  },
+  function(error){
+    console.error(error.stack || error);
+    __karma__.start();
+  }
+);
 
 
 /**
  * @param {string} path
  * @returns {boolean}
  */
-function filterTestFiles(path){
+function filterTestFiles(path) {
   return /\.spec\.js$/.test(path);
+}
+
+
+/**
+ * @param {string} path
+ * @returns {Promise}
+ */
+function importTestFiles(path) {
+  return System.import(path);
 }
 
 
@@ -39,7 +49,5 @@ function loadTestFiles(){
   return Object
     .keys(window.__karma__.files)
     .filter(filterTestFiles)
-    .map(function(path){
-      return System.import(path);
-    });
+    .map(importTestFiles);
 }
